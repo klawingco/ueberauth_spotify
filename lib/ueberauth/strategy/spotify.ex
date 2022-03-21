@@ -4,6 +4,7 @@ defmodule Ueberauth.Strategy.Spotify do
   """
 
   use Ueberauth.Strategy,
+    ignores_csrf_attack: true,
     uid_field: :uid,
     default_scope: "user-read-email"
 
